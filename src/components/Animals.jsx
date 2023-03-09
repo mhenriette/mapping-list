@@ -1,8 +1,8 @@
-const Animals = () => {
-    const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
+const Animals = ({ list }) => {
+
     return <div>
         <ul className="animal">
-            {animals.map(animal => <li>{animal}</li>)}
+            {list.map(animal => <li className="animal__item">{animal}</li>)}
         </ul>
     </div>;
 };
